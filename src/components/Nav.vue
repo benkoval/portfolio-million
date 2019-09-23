@@ -19,6 +19,14 @@
 
 $lato: 'Lato', sans-serif;
 
+$colors: (
+  a: #D65394,
+  b: #7C59AF,
+  c: #3A5BAC,
+  d: #FF6F61,
+  e: #D65394
+);
+
 .nav-container {
     width: 100vw;
     height: 100vh;
@@ -26,30 +34,35 @@ $lato: 'Lato', sans-serif;
 }
 
 .nav-bar {
+    margin: auto;
     position: fixed;
     width: 100vw;
+    // height: 4vw;
     background-color: #fff;
 }
 
 .ul-nav {
     display: flex;
-    justify-content: space-evenly;
+    // justify-content: space-around;
+    align-items: center;
     list-style-type: none;
     width: inherit;
 }
 
 .li-nav {
+    margin: auto;
     font-family: $lato;
     transition: 0.25s;
-    font-size: 1.5vw;
+    color: var(--color);
+    font-size: 1.2vw;
     text-transform: lowercase;
     &:after {
         content: '';
         margin: 0 auto;
         display: block;
-        width: 50%;
-        border-bottom: .15vw solid;
-        padding-bottom: 1rem;
+        width: 25%;
+        border-bottom: .11vw solid;
+        padding-bottom: .5rem;
     }
 }
 
@@ -64,22 +77,13 @@ $lato: 'Lato', sans-serif;
 .e:hover,
 .e:focus-within {
     transform: translateY(-0.2em);
-    border-color: var(--hover);
-    color: var(--hover);
+    // border-color: var(--hover);
+    // color: var(--hover);
 }
-
-$colors: (
-  a: #D65394,
-  b: #7C59AF,
-  c: #3A5BAC,
-  d: #FF6F61,
-  e: #D65394
-);
 
 @each $li, $color in $colors {
     .#{$li} {
       --color: #{$color};
-      --hover: #{adjust-hue($color, 2deg)};
     }
 }
 
