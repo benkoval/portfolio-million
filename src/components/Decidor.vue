@@ -1,6 +1,6 @@
 <template>
-    <section class='decidor-container'>
-      <h2 class='proj-title'>decidOR</h2>
+    <section class='indiv-proj-container'>
+      <h2 class='proj-title a'>decidOR</h2>
         <agile :autoplay='true'>
             <div class='slide'>
                 <img class='proj-img' src='https://bean-project-screenshots.s3.amazonaws.com/decidor.png'>
@@ -18,27 +18,19 @@
                 <img class='proj-img' src='https://bean-project-screenshots.s3.amazonaws.com/decidor4.png'>
             </div>
         </agile>
-        <h3>Source code</h3>
-        <h3>Live site</h3>
+        <div class='link-container'>
+          <a class='links' target='blank' rel='noopener' href='https://github.com/decider-team/decidr'>Source code</a>
+          <a class='links' target='blank' rel='noopener' href='https://decidor.herokuapp.com/'>Live site</a>
+        </div>
+
+        <div class='more-info'>
+          <h3 class='proj-info'>Over the course of two weeks, I collaborated with three of my fellow developers at Momentum Learning to build decidOR, a web application which helps users handle the overwhelming experience of having too many decisions to make.
+          We utilised various technologies, including <span class='tech a'>Django/Python, </span> <span class='tech b'>Vue/JavaScript, </span> <span class='tech c'>SCSS, </span> <span class='tech d'>Axios, </span> <span class='tech e'>AWS S3, </span> and more.</h3>
+        </div>
     </section>
 </template>
 
 <style lang='scss'>
-
-.proj-title {
-    text-align: center;
-    letter-spacing: .2rem;
-    font-size: 4vw;
-    color: #D65394;
-    text-transform: uppercase;
-}
-.decidor-container {
-    display: flex;
-    align-content: center;
-    flex-flow: column wrap;
-    justify-content: center;
-    width: 100vw;
-}
 .agile {
     margin: auto;
     max-width: 40vw;

@@ -284,6 +284,64 @@ a {
 //   box-shadow: 0 0 0 2em rgba(#fff,0);
 // }
 
+.proj-img {
+    width: 40vw;
+}
+.img-cont {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.indiv-proj-container {
+    display: flex;
+    align-content: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100vw;
+}
+
+.link-container {
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+.links {
+    margin-top: 3vw;
+    font-family: $lato;
+    color: #0a6cff;
+    font-size: 1.2vw;
+    border-bottom: .2vh solid;
+}
+.proj-title {
+    text-align: center;
+    letter-spacing: .2rem;
+    font-size: 4vw;
+    color: var(--color);
+    text-transform: uppercase;
+}
+
+.proj-info {
+    font-family: $lato;
+    color: #010a1a;
+    width: 60vw;
+    line-height: 6vh;
+}
+
+.tech {
+    color: var(--color);
+}
+
+
+.all-access {
+	clip-path: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+	overflow: hidden;
+    position: absolute !important;
+}
+
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 var(--hover); }
 }
