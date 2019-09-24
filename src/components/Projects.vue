@@ -15,9 +15,9 @@
                 class='see-more wht b' type='button'>View project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/ipreview.png'/>
             </div>
-            <div class='grid-item c'>
-                <button class='see-more wht c' type='button'>View project</button>
-                <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/ransom-asanas.png'/>
+            <div class='grid-item e'>
+                <button class='see-more wht e' type='button'>View project</button>
+                <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/freeshelf.png'/>
             </div>
             <div class='grid-item d'>
                 <button
@@ -25,9 +25,9 @@
                 class='see-more wht d' type='button'>Use project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/better-calculator.png'/>
             </div>
-            <div class='grid-item e'>
-                <button class='see-more wht e' type='button'>View project</button>
-                <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/freeshelf.png'/>
+            <div class='grid-item c'>
+                <button class='see-more wht c' type='button'>View project</button>
+                <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/ransom-asanas.png'/>
             </div>
             <div class='grid-item d'>
                 <button

@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <section class='indiv-proj-container'>
         <div id='pokemon'>
             <h1 class='pkmn-title' v-if='silhouette'>Who's that Pokémon?</h1>
             <div 
@@ -39,27 +39,20 @@
           </div>
         </form>
 
-        <div 
-        v-if="incorrectGuess"
-        class='failDiv'>
-          <h2 class='pkmn-title'>Guess again!</h2>
+            <div 
+            v-if="incorrectGuess"
+            class='failDiv'>
+            <h2 class='pkmn-title'>Guess again!</h2>
+            </div>
         </div>
-        
-        <!-- <input
-            id='inputGuess'
-            placeholder='press enter asshole'
-            type='text'
-            v-model='userGuess'
-            v-on:keyup.enter="getFrontSprite(getRandomInt())"/>
-            <button
-            :disabled='userGuess != frontName'
-            @click='getFrontSprite(getRandomInt())'>Who's That Fuckin' Pokemon?!</button> -->
+        <div class='link-container'>
+          <a class='links' target='blank' rel='noopener' href='https://github.com/bennykoval/portfolio-million/blob/master/src/components/Pokemon.vue'>Source code</a>
+        </div>
 
-            <!-- <button
-            @click='getBackSprite(getRandomInt())'>booty view</button>
-            <img class='silhouette' :src="backSprite"/> -->
+        <div class='more-info'>
+          <h3 class='proj-info'>"Who's That Pokemon?" pays homage to my childhood. I built this cute little game with <span class='tech a'>Vue, </span> and I used <span class='tech b'>Axios </span> to access data from the Poke API.</h3>
         </div>
-    </main>
+    </section>
 </template>
 
 
@@ -78,7 +71,6 @@ $btnFont: 'VT323', monospace;
   font-family: $btnFont;
   font-size: 3rem;
   color: #2c3e50;
-  margin-top: 60px;
 }
 .surrenderButton {
   font-family: $btnFont;
