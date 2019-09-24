@@ -22,15 +22,17 @@
             <div class='grid-item d'>
                 <button
                 @click='seeCalculator()'
-                class='see-more wht d' type='button'>View project</button>
+                class='see-more wht d' type='button'>Use project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/better-calculator.png'/>
             </div>
             <div class='grid-item e'>
                 <button class='see-more wht e' type='button'>View project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/freeshelf.png'/>
             </div>
-            <div class='grid-item b'>
-                <button class='see-more wht b' type='button'>View project</button>
+            <div class='grid-item d'>
+                <button
+                @click='seePokemon()' 
+                class='see-more wht d' type='button'>Play project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/whos-that-pokemon.png'/>
             </div>
         </div>
@@ -54,6 +56,13 @@
             @click='backToProjs()'
             class='see-more clr d' type='button'>Back to projects</button>
       </div>
+
+      <div class='back-container' v-if='!hidePokemon'>
+            <Pokemon/>
+            <button 
+            @click='backToProjs()'
+            class='see-more clr d' type='button'>Back to projects</button>
+      </div>
     </section>
 </template>
 
@@ -61,13 +70,15 @@
 import Decidor from "./Decidor";
 import Ipreview from "./Ipreview";
 import Calculator from "./Calculator";
+import Pokemon from "./Pokemon";
 
 export default {
   name: 'Projects',
   components: {
     Decidor,
     Ipreview,
-    Calculator
+    Calculator,
+    Pokemon
   },
   data: () => {
     return {
@@ -83,6 +94,7 @@ export default {
           this.hideDecidor = true;
           this.hideIpreview  = true;
           this.hideCalculator = true;
+          this.hidePokemon = true;
       },
       seeDecidor() {
           this.hideProjects = true;
@@ -95,6 +107,10 @@ export default {
       seeCalculator() {
           this.hideProjects = true;
           this.hideCalculator = false;
+      },
+      seePokemon() {
+          this.hideProjects = true;
+          this.hidePokemon = false;
       }
   }
 }

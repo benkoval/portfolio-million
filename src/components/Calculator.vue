@@ -53,11 +53,11 @@
         </div>
 
         <div class='link-container'>
-          <a class='links' target='blank' rel='noopener' href='https://github.com/bennykoval/w7-itunes-search-bennykoval'>Source code</a>
+          <a class='links' target='blank' rel='noopener' href='https://github.com/bennykoval/portfolio-million/blob/master/src/components/Calculator.vue'>Source code</a>
         </div>
 
         <div class='more-info'>
-          <h3 class='proj-info'>iPreview is a <span class='tech a'>JavaScript</span> project for fast-paced listeners who want only 30-second snippets of songs. I used <span class='tech b'>Fetch</span> to retrieve data from the iTunes API.</h3>
+          <h3 class='proj-info'>Above is a quick calculator which I initially built in <span class='tech a'>vanilla JavaScript, </span> then reworked into a <span class='tech b'>Vue component,</span> which means you can make calculations right on this page. Don't be shy - click some buttons!</h3>
         </div>
     </section>
 </template>
@@ -159,6 +159,28 @@ td {
       transform: translateY(3px);
       box-shadow: inset 0 -3px 0 0 $lbs;
     }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    #calc-head {
+        margin-top: 8%;
+  }
+    .wrapper {
+        width: auto;
+  }
+
+    .calc-table {
+        width: 50%;
+  }
+
+  .display-box {
+        width: 55vw;
+  }
+
+  td {
+        padding: .5vh;
+  }
+
 }
 </style>
 
