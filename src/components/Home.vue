@@ -1,13 +1,12 @@
 <template>
 <div class='home'>
-    <Nav/>
-    <h1 class='title'>Hello, world!</h1>
+    <h1 class='title'>BENNY KOVAL</h1>
 
-    <div class='nav-button-container'>
+    <h2 class='intro'>I build beautiful websites that are intuitive and accessible.</h2>
+    <!-- <div class='nav-button-container'> -->
         <!-- <a href='#projects' class='ghost'>Look at all my cool stuff!</a> -->
         
-        <a href='#about-me' class='ghost'>Let me introduce myself</a>
-    </div>
+    <!-- </div> -->
 </div>
 </template>
 

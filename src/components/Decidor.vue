@@ -1,5 +1,6 @@
 <template>
     <section class='decidor-container'>
+      <h2 class='proj-title'>decidOR</h2>
         <agile :autoplay='true'>
             <div class='slide'>
                 <img class='proj-img' src='https://bean-project-screenshots.s3.amazonaws.com/decidor.png'>
@@ -17,16 +18,26 @@
                 <img class='proj-img' src='https://bean-project-screenshots.s3.amazonaws.com/decidor4.png'>
             </div>
         </agile>
+        <h3>Source code</h3>
+        <h3>Live site</h3>
     </section>
 </template>
 
 <style lang='scss'>
 
+.proj-title {
+    text-align: center;
+    letter-spacing: .2rem;
+    font-size: 4vw;
+    color: #D65394;
+    text-transform: uppercase;
+}
 .decidor-container {
     display: flex;
+    align-content: center;
+    flex-flow: column wrap;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
 }
 .agile {
     margin: auto;
