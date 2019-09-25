@@ -189,7 +189,7 @@ export default {
   name: 'Calculator',
   mounted() {
    const displayBox = document.querySelector('.display-box')
-   this.displayStuff(displayBox).focus();
+   displayBox.focus();
   },
   methods: {
     displayStuff(display) {
