@@ -109,7 +109,7 @@ li {
     font-family: $lex;
     text-align: center;
     letter-spacing: .2rem;
-    font-size: 3.2vw;
+    font-size: 4.2vw;
     color: #fff;
     text-transform: uppercase;
 }
@@ -150,7 +150,7 @@ li {
 }
 
 .lin {
-    margin-bottom: 10px;
+    margin-top: 5px;
 }
 .trans-btn {
     background: transparent;
@@ -169,6 +169,32 @@ li {
 
 //resume 
 
+#resume-link {
+    padding-bottom: 20px;
+    background: $maingr
+    no-repeat; 
+    background-size: 100% 5px;
+    background-position: 0 80%;
+    // background-position: 90% 0;
+}
+.placeholder-res {
+    padding-top: 5vw;
+    text-align: center;
+    margin: auto;
+    width: 80vw;
+    font-size: 2.3rem;
+    font-family: $lex;
+    background-image: $maingr;
+    background-size: 600%;
+    background-position: 0 0;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: gradients;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .skills-container {
     height: 100vh;
 }
@@ -177,10 +203,10 @@ li {
 //     max-width: 60vw;
 // }
 .list-container {
-    padding-top: 5vw;
+    padding-top: 2vw;
     display: grid;
     justify-content: center;
-    align-content: center;
+    // align-content: center;
     grid-template-columns: repeat(4, 10vw);
     grid-gap: 5vw;
 }
@@ -521,5 +547,20 @@ li {
         display: flex;
         justify-content: center;
         align-content: center;
+    }
+
+    .list-container {
+        grid-template-columns: repeat(2, 25vw);
+        grid-gap: 10vw;
+    }
+
+    .li-skill {
+        padding: .8em 1.8em;
+        box-shadow: -3px 5px 9px 2px #999;
+        font-size: 3vw;
+    }
+    .placeholder-res {
+        padding-top: 14vw;
+        font-size: 7vw;
     }
 }

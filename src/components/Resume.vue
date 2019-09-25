@@ -2,18 +2,19 @@
     <section 
     id='resume'
     class='skills-container'>
+    <div class='empty'></div>
       <ul class='proj-intro'>Skills</ul>
       <div class='container-of-container'>
           <div class='list-container'>
             <li 
             data-aos="zoom-in-right"
-            class='li-skill'>Vue</li>
+            class='li-skill'>Django</li>
             <li
             data-aos="zoom-in-right"
             class='li-skill'>React</li>
             <li
             data-aos="zoom-in-right"
-            class='li-skill'>Django</li>
+            class='li-skill'>HTML</li>
             <li
             data-aos="zoom-in-right"
             class='li-skill'>SCSS</li>
@@ -23,20 +24,30 @@
             <li
             data-aos="zoom-in-right"
             class='li-skill'>Python</li>
-            <li
-            data-aos="zoom-in-right"
-            class='li-skill'>HTML</li>
-            <li 
-            data-aos="zoom-in-right"
-            class='li-skill'>CSS</li>
-            <li
-            data-aos="zoom-in-right"
-            class='li-skill'>PostgreSQL</li>
             <li 
             data-aos="zoom-in-right"
             class='li-skill'>GitHub</li>
+            <li
+            data-aos="zoom-in-right"
+            class='li-skill'>Vue</li>
+            <li 
+            data-aos="zoom-in-right"
+            class='li-skill'>Postgres</li>
+            <li 
+            data-aos="zoom-in-right"
+            class='li-skill'>Heroku</li>
+            <li 
+            data-aos="zoom-in-right"
+            class='li-skill'>AWS S3</li>
+            <li 
+            data-aos="zoom-in-right"
+            class='li-skill'>Surge</li>
           </div>
-      </div>
+        </div>
+    <h3
+    data-aos="fade-right"
+    data-aos-offset='-300'
+    class='placeholder-res'>Check out my <a id='resume-link' target='blank' rel='noopener' href='https://drive.google.com/file/d/1jCwsBUc1jylW0Rcd-E8000Ljd5RghCHp/view?usp=sharing'>resume</a></h3>
 
             <!-- <div class='grid-1'>
                 <button class='see-more wht' role='button'>View resume</button>
