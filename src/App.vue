@@ -2,8 +2,8 @@
   <div id="app">
     <Nav/>
     <About/>
-    <Projects/>
     <Resume/>
+    <Projects/>
   </div>
 </template>
 

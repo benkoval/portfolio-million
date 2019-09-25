@@ -1,42 +1,50 @@
 <template>
     <section 
-    id='resume' class='home'>
-        <!-- <div class='skill-grid'>
-            <div class='grid-1'>
-                <ul class='title'>Frameworks</ul>
-                    <li class='intro'>Vue</li>
-                    <li class='intro'>React</li>
-                    <li class='intro'>Django</li>
-                    <li class='intro'>SCSS</li>
-            </div>
-            <div class='grid-2'>
-                <ul class='title'>Languages</ul>
-                    <li class='intro'>JavaScript</li>
-                    <li class='intro'>Python</li>
-                    <li class='intro'>HTML</li>
-                    <li class='intro'>CSS</li>
-            </div>
-            <div class='grid-3'>
-                <ul class='title'>Databases</ul>
-                    <li class='intro'>PostgreSQL</li>
-                    <li class='intro'>SQLite</li>
-            </div>
-
-            <div class='grid-4'>
-                <ul class='title'>Hosting</ul>
-                    <li class='intro'>AWS S3</li>
-                    <li class='intro'>Heroku</li>
-                    <li class='intro'>Surge</li>
-            </div>
-        </div> -->
+    id='resume'
+    class='skills-container'>
+      <ul class='proj-intro'>Skills</ul>
+      <div class='container-of-container'>
+          <div class='list-container'>
+            <li 
+            data-aos="zoom-in-right"
+            class='li-skill'>Vue</li>
+            <li
+            data-aos="zoom-in-right"
+            class='li-skill'>React</li>
+            <li
+            data-aos="zoom-in-right"
+            class='li-skill'>Django</li>
+            <li
+            data-aos="zoom-in-right"
+            class='li-skill'>SCSS</li>
+            <li
+            data-aos="zoom-in-right"
+            class='li-skill'>JavaScript</li>
+            <li
+            data-aos="zoom-in-right"
+            class='li-skill'>Python</li>
+            <li
+            data-aos="zoom-in-right"
+            class='li-skill'>HTML</li>
+            <li 
+            data-aos="zoom-in-right"
+            class='li-skill'>CSS</li>
+            <li
+            data-aos="zoom-in-right"
+            class='li-skill'>PostgreSQL</li>
+            <li 
+            data-aos="zoom-in-right"
+            class='li-skill'>GitHub</li>
+          </div>
+      </div>
 
             <!-- <div class='grid-1'>
                 <button class='see-more wht' role='button'>View resume</button>
             </div> -->
-        <object 
+        <!-- <object 
         data-aos="fade"
         data-aos-duration="1500" 
-        class='resume' data='https://bean-project-screenshots.s3.amazonaws.com/bkoval-resume-21-9.pdf'></object>
+        class='resume' data='https://bean-project-screenshots.s3.amazonaws.com/bkoval-resume-21-9.pdf'></object> -->
     </section>
 </template>
 

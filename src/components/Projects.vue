@@ -40,6 +40,7 @@
             <div
             data-aos="zoom-in"
             data-aos-duration="1000"
+            data-aos-offset="-300"
             class='grid-item d'>
                 <button
                 @click='seeCalculator()'
@@ -51,6 +52,7 @@
             <div
             data-aos="zoom-in"
             data-aos-duration="1000" 
+            data-aos-offset="-350"
             class='grid-item c'>
                 <button
                 @click='seeYoga()'
@@ -61,6 +63,7 @@
             <div
             data-aos="zoom-in"
             data-aos-duration="1000"
+            data-aos-offset="-400"
             class='grid-item d'>
                 <button
                 @click='seePokemon()' 
@@ -68,7 +71,7 @@
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/whos-that-pokemon.png'/>
             </div>
         </div>
-        <div class='space'></div>
+
         <div class='back-container' v-if='!hideDecidor'>
             <Decidor
             data-aos='fade-right'

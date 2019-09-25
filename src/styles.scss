@@ -169,11 +169,38 @@ li {
 
 //resume 
 
-.resume {
+.skills-container {
     height: 100vh;
-    width: 100vw;
 }
 
+// .container-of-container {
+//     max-width: 60vw;
+// }
+.list-container {
+    padding-top: 5vw;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 10vw);
+    grid-gap: 5vw;
+}
+
+.li-skill {
+    margin: auto;
+    font-family: $lato;
+    transition: 0.25s;
+    color: #fff;
+    text-transform: uppercase;
+    padding: .5em 1.5em;
+    box-shadow: -3px 5px 9px 2px #999;
+    font-size: 1.4vw;
+    background-image: $maingr;
+    background-size: 600%;
+    background-position: 0 0;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: gradients;
+}
 // .skill-grid {
 //     display: grid;
 //     margin: auto;
@@ -248,8 +275,8 @@ li {
     color: #fff;
     border-color: var(--color);
     box-shadow:
-      inset -6.2em 0 0 0 var(--color),
-      inset 6.2em 0 0 0 var(--color); 
+      inset -8em 0 0 0 var(--color),
+      inset 8em 0 0 0 var(--color); 
 }
 .wht {
     transition: 0.25s;
@@ -459,10 +486,12 @@ li {
 
     .grid-item {
         padding: .3rem;
+        max-height: 27vh;
     }
 
     .proj-img {
         width: 80vw;
+        height: 40vh;
     }
 
     .agile {
