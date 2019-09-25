@@ -1,7 +1,9 @@
 <template>
     <section id='projects'>
         <div class='empty'></div>
-        <h1 class='proj-intro'>Projects</h1>
+        <h1 
+        v-if='!hideProjects'
+        class='proj-intro'>Projects</h1>
         <div 
         v-if='!hideProjects'
         class='projects-container'>
@@ -28,7 +30,9 @@
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/better-calculator.png'/>
             </div>
             <div class='grid-item c'>
-                <button class='see-more wht c' type='button'>View project</button>
+                <button
+                @click='seeYoga()'
+                class='see-more wht c' type='button'>View project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/ransom-asanas.png'/>
             </div>
             <div class='grid-item d'>
@@ -65,6 +69,13 @@
             @click='backToProjs()'
             class='see-more clr d' type='button'>Back to projects</button>
       </div>
+
+      <div class='back-container' v-if='!hideYoga'>
+            <Yoga/>
+            <button 
+            @click='backToProjs()'
+            class='see-more clr c' type='button'>Back to projects</button>
+      </div>
     </section>
 </template>
 
@@ -74,6 +85,7 @@ import Decidor from "./Decidor";
 import Ipreview from "./Ipreview";
 import Calculator from "./Calculator";
 import Pokemon from "./Pokemon";
+import Yoga from "./Yoga";
 
 export default {
   name: 'Projects',
@@ -81,7 +93,8 @@ export default {
     Decidor,
     Ipreview,
     Calculator,
-    Pokemon
+    Pokemon,
+    Yoga
   },
   data: () => {
     return {
@@ -90,6 +103,7 @@ export default {
         hideIpreview: true,
         hideCalculator: true,
         hidePokemon: true,
+        hideYoga: true,
     }
   },
   mounted() {
@@ -104,6 +118,7 @@ export default {
           this.hideIpreview  = true;
           this.hideCalculator = true;
           this.hidePokemon = true;
+          this.hideYoga = true;
       },
       seeDecidor() {
           this.hideProjects = true;
@@ -120,6 +135,10 @@ export default {
       seePokemon() {
           this.hideProjects = true;
           this.hidePokemon = false;
+      },
+      seeYoga() {
+          this.hideProjects = true;
+          this.hideYoga = false;
       }
   }
 }
