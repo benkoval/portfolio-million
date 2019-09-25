@@ -1,6 +1,5 @@
 <template>
     <section 
-    data-aos="fade-right"
     id='resume' class='home'>
         <!-- <div class='skill-grid'>
             <div class='grid-1'>
@@ -34,7 +33,10 @@
             <!-- <div class='grid-1'>
                 <button class='see-more wht' role='button'>View resume</button>
             </div> -->
-        <object class='resume' data='https://bean-project-screenshots.s3.amazonaws.com/bkoval-resume-21-9.pdf'></object>
+        <object 
+        data-aos="fade"
+        data-aos-duration="1500" 
+        class='resume' data='https://bean-project-screenshots.s3.amazonaws.com/bkoval-resume-21-9.pdf'></object>
     </section>
 </template>
 

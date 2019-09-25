@@ -14,7 +14,8 @@
                 <button 
                 @click='seeDecidor()'
                 class='see-more wht a' type='button'>View project</button>
-                <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/decidor.png'/>
+                <img class='deck-img' 
+                alt='Homepage of decidOR app which displays a grid of activity choices, including watching movies or eating out' src='https://bean-project-screenshots.s3.amazonaws.com/decidor.png'/>
             </div>
             <div
             data-aos="zoom-in"
@@ -23,7 +24,8 @@
                 <button
                 @click='seeIpreview()' 
                 class='see-more wht b' type='button'>View project</button>
-                <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/ipreview.png'/>
+                <img class='deck-img' 
+                alt='iPreview search results' src='https://bean-project-screenshots.s3.amazonaws.com/ipreview.png'/>
             </div>
             <div
             data-aos="zoom-in"
@@ -32,7 +34,8 @@
                 <button
                 @click='seeFreeshelf()' 
                 class='see-more wht e' type='button'>View project</button>
-                <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/freeshelf.png'/>
+                <img 
+                alt='Homepage of Freeshelf app' class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/freeshelf.png'/>
             </div>
             <div
             data-aos="zoom-in"
@@ -40,8 +43,10 @@
             class='grid-item d'>
                 <button
                 @click='seeCalculator()'
-                class='see-more wht d' type='button'>Use project</button>
-                <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/better-calculator.png'/>
+                class='see-more wht d' type='button'>Interactive</button>
+                <img 
+                alt='Calculator app' 
+                class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/better-calculator.png'/>
             </div>
             <div
             data-aos="zoom-in"
@@ -50,7 +55,8 @@
                 <button
                 @click='seeYoga()'
                 class='see-more wht c' type='button'>View project</button>
-                <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/ransom-asanas.png'/>
+                <img 
+                alt='Zen out homepage displays three yoga poses' class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/ransom-asanas.png'/>
             </div>
             <div
             data-aos="zoom-in"
@@ -58,7 +64,7 @@
             class='grid-item d'>
                 <button
                 @click='seePokemon()' 
-                class='see-more wht d' type='button'>Play project</button>
+                class='see-more wht d' type='button'>Interactive</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/whos-that-pokemon.png'/>
             </div>
         </div>
@@ -69,10 +75,11 @@
             data-aos-duration='8000'/>
             <button 
             @click='backToProjs()'
-            class='see-more clr a' 
+            class='see-more fill a' 
             type='button'
             data-aos='fade-right'
-            data-aos-duration='8000'>Back to projects</button>
+            data-aos-duration='8000'
+            data-aos-offset="-300">Back to projects</button>
             <div class='space'></div>
       </div>
 
@@ -81,11 +88,12 @@
             data-aos='fade-right'
             data-aos-duration='8000'/>
             <button 
-            @click='backToProjs()'
-            class='see-more clr b' 
-            type='button'
             data-aos='fade-right'
-            data-aos-duration='8000'>Back to projects</button>
+            data-aos-duration='8000'
+            data-aos-offset="-300"
+            @click='backToProjs()'
+            class='see-more fill b' 
+            type='button'>Back to projects</button>
             <div class='space'></div>
       </div>
         <div class='back-container' v-if='!hideCalculator'>
@@ -94,10 +102,11 @@
             data-aos-duration='8000'/>
             <button 
             @click='backToProjs()'
-            class='see-more clr d' 
+            class='see-more fill d' 
             type='button'
             data-aos='fade-right'
-            data-aos-duration='8000'>Back to projects</button>
+            data-aos-duration='8000'
+            data-aos-offset="-300">Back to projects</button>
             <div class='space'></div>
       </div>
 
@@ -107,10 +116,11 @@
             data-aos-duration='8000'/>
             <button 
             @click='backToProjs()'
-            class='see-more clr d' 
+            class='see-more fill d' 
             type='button'
             data-aos='fade-right'
-            data-aos-duration='8000'>Back to projects</button>
+            data-aos-duration='8000'
+            data-aos-offset="-300">Back to projects</button>
             <div class='space'></div>
       </div>
 
@@ -120,10 +130,11 @@
             data-aos-duration='8000'/>
             <button 
             @click='backToProjs()'
-            class='see-more clr c' 
+            class='see-more fill c' 
             type='button'
             data-aos='fade-right'
-            data-aos-duration='8000'>Back to projects</button>
+            data-aos-duration='8000'
+            data-aos-offset="-300">Back to projects</button>
             <div class='space'></div>
       </div>
 
@@ -133,10 +144,11 @@
             data-aos-duration='8000'/>
             <button 
             @click='backToProjs()'
-            class='see-more clr e' 
+            class='see-more fill e' 
             type='button'
             data-aos='fade-right'
-            data-aos-duration='8000'>Back to projects</button>
+            data-aos-duration='8000'
+            data-aos-offset="-300">Back to projects</button>
             <div class='space'></div>
       </div>
     </section>

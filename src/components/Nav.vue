@@ -4,7 +4,7 @@
     class='nav-bar'>
         <ul
         class='ul-nav'>
-            <li class='li-nav a'><a href='#about'>About</a></li>
+            <li class='li-nav a'><a href='#about'>Contact</a></li>
             <li class='li-nav c'><a href='#projects'
             @click='emitGlobalClickEvent()'>Projects</a></li>
             <li class='li-nav b'><a href='#resume'>Resume</a></li>
