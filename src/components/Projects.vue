@@ -32,7 +32,7 @@
             <div class='grid-item d'>
                 <button
                 @click='seePokemon()' 
-                class='see-more wht d' type='button'>Play project</button>
+                class='see-more wht d' type='button'>Interactive</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/whos-that-pokemon.png'/>
             </div>
         </div>
@@ -86,6 +86,7 @@ export default {
         hideDecidor: true,
         hideIpreview: true,
         hideCalculator: true,
+        hidePokemon: true,
     }
   },
   methods: {
