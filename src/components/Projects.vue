@@ -1,5 +1,7 @@
 <template>
     <section id='projects'>
+        <div class='empty'></div>
+        <h1 class='proj-intro'>Projects</h1>
         <div 
         v-if='!hideProjects'
         class='projects-container'>
