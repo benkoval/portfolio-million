@@ -32,7 +32,7 @@
             <div class='grid-item d'>
                 <button
                 @click='seePokemon()' 
-                class='see-more wht d' type='button'>Interactive</button>
+                class='see-more wht d' type='button'>Play project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/whos-that-pokemon.png'/>
             </div>
         </div>
@@ -67,6 +67,7 @@
 </template>
 
 <script>
+import { EventBus } from './event-bus.js';
 import Decidor from "./Decidor";
 import Ipreview from "./Ipreview";
 import Calculator from "./Calculator";
@@ -88,6 +89,11 @@ export default {
         hideCalculator: true,
         hidePokemon: true,
     }
+  },
+  mounted() {
+    EventBus.$on('i-got-clicked', clicked => {
+        this.backToProjs();
+    });
   },
   methods: {
       backToProjs() {

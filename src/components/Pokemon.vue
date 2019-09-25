@@ -50,7 +50,7 @@
         </div>
 
         <div class='more-info'>
-          <h3 class='proj-info'>"Who's That Pokemon?" pays homage to my childhood. I built this cute little game with <span class='tech a'>Vue, </span> and I used <span class='tech b'>Axios </span> to access data from the Poke API.</h3>
+          <h3 class='proj-info'>"Who's That Pokemon?" pays homage to my childhood. I built this cute little game with <span class='tech d'>Vue, </span> and I used <span class='tech d'>Axios </span> to access data from the Poke API.</h3>
         </div>
     </section>
 </template>
@@ -70,7 +70,7 @@ $btnFont: 'VT323', monospace;
 .pkmn-title {
   font-family: $btnFont;
   font-size: 3rem;
-  color: #2c3e50;
+  color: #FF6F61;
 }
 .surrenderButton {
   font-family: $btnFont;

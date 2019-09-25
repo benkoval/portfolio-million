@@ -1,6 +1,6 @@
 <template>
     <section class='indiv-proj-container'>
-        <h2 class='proj-title b'>Calculator</h2>
+        <h2 class='proj-title d'>Calculator</h2>
         <div class='wrapper'>
             <table class='calc-table'>
                 <th>
@@ -57,7 +57,7 @@
         </div>
 
         <div class='more-info'>
-          <h3 class='proj-info'>Above is a quick calculator which I initially built in <span class='tech a'>vanilla JavaScript, </span> then reworked into a <span class='tech b'>Vue component,</span> which means you can make calculations right on this page. Don't be shy - click some buttons!</h3>
+          <h3 class='proj-info'>Above is a quick calculator which I initially built in <span class='tech d'>vanilla JavaScript, </span> then reworked into a <span class='tech d'>Vue component,</span> which means you can make calculations right on this page. Don't be shy - click some buttons!</h3>
         </div>
     </section>
 </template>
