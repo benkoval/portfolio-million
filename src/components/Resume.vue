@@ -1,5 +1,7 @@
 <template>
-    <section id='resume' class='home'>
+    <section 
+    data-aos="fade-right"
+    id='resume' class='home'>
         <!-- <div class='skill-grid'>
             <div class='grid-1'>
                 <ul class='title'>Frameworks</ul>

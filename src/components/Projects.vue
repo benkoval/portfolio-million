@@ -1,10 +1,13 @@
 <template>
-    <section id='projects'>
+    <section 
+    id='projects'>
         <div class='empty'></div>
         <h1 
         v-if='!hideProjects'
         class='proj-intro'>Projects</h1>
         <div 
+        data-aos="zoom-in"
+        data-aos-duration="1000"
         v-if='!hideProjects'
         class='projects-container'>
             <div class='grid-item a'>
@@ -13,68 +16,128 @@
                 class='see-more wht a' type='button'>View project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/decidor.png'/>
             </div>
-            <div class='grid-item b'>
+            <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            class='grid-item b'>
                 <button
                 @click='seeIpreview()' 
                 class='see-more wht b' type='button'>View project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/ipreview.png'/>
             </div>
-            <div class='grid-item e'>
-                <button class='see-more wht e' type='button'>View project</button>
+            <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            class='grid-item e'>
+                <button
+                @click='seeFreeshelf()' 
+                class='see-more wht e' type='button'>View project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/freeshelf.png'/>
             </div>
-            <div class='grid-item d'>
+            <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            class='grid-item d'>
                 <button
                 @click='seeCalculator()'
                 class='see-more wht d' type='button'>Use project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/better-calculator.png'/>
             </div>
-            <div class='grid-item c'>
+            <div
+            data-aos="zoom-in"
+            data-aos-duration="1000" 
+            class='grid-item c'>
                 <button
                 @click='seeYoga()'
                 class='see-more wht c' type='button'>View project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/ransom-asanas.png'/>
             </div>
-            <div class='grid-item d'>
+            <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            class='grid-item d'>
                 <button
                 @click='seePokemon()' 
                 class='see-more wht d' type='button'>Play project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/whos-that-pokemon.png'/>
             </div>
         </div>
-
+        <div class='space'></div>
         <div class='back-container' v-if='!hideDecidor'>
-            <Decidor/>
+            <Decidor
+            data-aos='fade-right'
+            data-aos-duration='8000'/>
             <button 
             @click='backToProjs()'
-            class='see-more clr a' type='button'>Back to projects</button>
+            class='see-more clr a' 
+            type='button'
+            data-aos='fade-right'
+            data-aos-duration='8000'>Back to projects</button>
+            <div class='space'></div>
       </div>
 
         <div class='back-container' v-if='!hideIpreview'>
-            <Ipreview/>
+            <Ipreview
+            data-aos='fade-right'
+            data-aos-duration='8000'/>
             <button 
             @click='backToProjs()'
-            class='see-more clr b' type='button'>Back to projects</button>
+            class='see-more clr b' 
+            type='button'
+            data-aos='fade-right'
+            data-aos-duration='8000'>Back to projects</button>
+            <div class='space'></div>
       </div>
         <div class='back-container' v-if='!hideCalculator'>
-            <Calculator/>
+            <Calculator
+            data-aos='fade-right'
+            data-aos-duration='8000'/>
             <button 
             @click='backToProjs()'
-            class='see-more clr d' type='button'>Back to projects</button>
+            class='see-more clr d' 
+            type='button'
+            data-aos='fade-right'
+            data-aos-duration='8000'>Back to projects</button>
+            <div class='space'></div>
       </div>
 
       <div class='back-container' v-if='!hidePokemon'>
-            <Pokemon/>
+            <Pokemon
+            data-aos='fade-right'
+            data-aos-duration='8000'/>
             <button 
             @click='backToProjs()'
-            class='see-more clr d' type='button'>Back to projects</button>
+            class='see-more clr d' 
+            type='button'
+            data-aos='fade-right'
+            data-aos-duration='8000'>Back to projects</button>
+            <div class='space'></div>
       </div>
 
       <div class='back-container' v-if='!hideYoga'>
-            <Yoga/>
+            <Yoga
+            data-aos='fade-right'
+            data-aos-duration='8000'/>
             <button 
             @click='backToProjs()'
-            class='see-more clr c' type='button'>Back to projects</button>
+            class='see-more clr c' 
+            type='button'
+            data-aos='fade-right'
+            data-aos-duration='8000'>Back to projects</button>
+            <div class='space'></div>
+      </div>
+
+        <div class='back-container' v-if='!hideFreeshelf'>
+            <Freeshelf
+            data-aos='fade-right'
+            data-aos-duration='8000'/>
+            <button 
+            @click='backToProjs()'
+            class='see-more clr e' 
+            type='button'
+            data-aos='fade-right'
+            data-aos-duration='8000'>Back to projects</button>
+            <div class='space'></div>
       </div>
     </section>
 </template>
@@ -86,6 +149,7 @@ import Ipreview from "./Ipreview";
 import Calculator from "./Calculator";
 import Pokemon from "./Pokemon";
 import Yoga from "./Yoga";
+import Freeshelf from "./Freeshelf";
 
 export default {
   name: 'Projects',
@@ -94,7 +158,8 @@ export default {
     Ipreview,
     Calculator,
     Pokemon,
-    Yoga
+    Yoga,
+    Freeshelf
   },
   data: () => {
     return {
@@ -104,6 +169,7 @@ export default {
         hideCalculator: true,
         hidePokemon: true,
         hideYoga: true,
+        hideFreeshelf: true,
     }
   },
   mounted() {
@@ -119,6 +185,7 @@ export default {
           this.hideCalculator = true;
           this.hidePokemon = true;
           this.hideYoga = true;
+          this.hideFreeshelf = true;
       },
       seeDecidor() {
           this.hideProjects = true;
@@ -139,6 +206,10 @@ export default {
       seeYoga() {
           this.hideProjects = true;
           this.hideYoga = false;
+      },
+      seeFreeshelf() {
+          this.hideProjects = true;
+          this.hideFreeshelf = false;
       }
   }
 }

@@ -144,6 +144,7 @@ li {
     filter: invert(100%);
     margin-top: 4vh;
     width: 100vw;
+    height: 10vh;
     display: flex;
     justify-content: center;
 }
@@ -158,6 +159,12 @@ li {
 .icon {
     height: 5vh;
     width: 5vw;
+    transition: 0.25s;
+    &:hover,
+    &:focus-within {
+        height: 6vh;
+        width: 6vw;
+    }
 }
 
 //resume 
@@ -177,6 +184,9 @@ li {
 
 //projects 
 
+.space {
+    padding: 8vh;
+}
 .empty {
     height: 1vh;
 }
@@ -363,6 +373,8 @@ li {
 }
 
 .proj-info {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
     font-family: $lato;
     color: #010a1a;
     width: 60vw;
