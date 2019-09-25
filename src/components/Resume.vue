@@ -47,7 +47,7 @@
     <h3
     data-aos="fade-right"
     data-aos-offset='-300'
-    class='placeholder-res'>Check out my <a id='resume-link' target='blank' rel='noopener' href='https://drive.google.com/file/d/1jCwsBUc1jylW0Rcd-E8000Ljd5RghCHp/view?usp=sharing'>resume</a></h3>
+    class='placeholder-res'>Check out my <a id='resume-link' target='blank' rel='noopener' href='https://drive.google.com/file/d/1tXcFxAAXBADAPovT5fiUc58io0Q50Gls/view'>resume</a></h3>
 
             <!-- <div class='grid-1'>
                 <button class='see-more wht' role='button'>View resume</button>
