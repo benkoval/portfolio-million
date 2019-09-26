@@ -5,9 +5,11 @@
         data-aos="fade-right"
         data-aos-duration="1000" 
         class='title'>Ben Koval</h1>
-        <img
-        data-aos="fade-right"
-        data-aos-duration="1000" class='portrait' src='https://bean-project-screenshots.s3.amazonaws.com/mememe.jpg'/>
+        <div class='img-container'>
+            <img
+            data-aos="fade-right"
+            data-aos-duration="1000" class='portrait' src='https://bean-project-screenshots.s3.amazonaws.com/mememe.jpg'/>
+        </div>
         <div
         data-aos="fade-right"
         data-aos-duration="1000" class='social-container'>
@@ -19,5 +21,10 @@
         data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-offset="-300" class='intro'>Passionate about making the web more accessible and intuitive.</h2>
+        <!-- <h2 class='intro'>Check out my <a class='resume-link' target='blank' rel='noopener' href='https://drive.google.com/file/d/1nzBria8QRxXHfioUllVkoKp-bFq2hHue/view'>resume</a> for more about me!</h2> -->
+
+        <!-- <div class='grid-area-2'>
+            <p class='intro'>I'm a full-stack developer seeking new opportunities and thrilling challenges in the Triangle area of North Carolina.</p>
+        </div> -->
     </section>
 </template>

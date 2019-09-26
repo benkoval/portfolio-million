@@ -139,6 +139,11 @@ li {
     font-size: 1.8vw;
     color: #fff;
 }
+
+.resume-link {
+    border-bottom: .1rem #fff solid;
+    cursor: pointer;
+}
 @keyframes gradients {
     0%   {background-position: 0 0;}
     25% {background-position: 50% 0;}
@@ -153,7 +158,20 @@ li {
     height: 100vh;
 }
 
+.grid-area-1 {
+    width: 40vw;
+}
+
+.grid-area-2 {
+    width: 40vw;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 .portrait {
+    margin: auto;
     height: 35vh;
     border-radius: 50%;
     border: 3px dotted #fff;
@@ -201,7 +219,7 @@ li {
     text-align: center;
     margin: auto;
     width: 80vw;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     font-family: $lex;
     background-image: $maingr;
     background-size: 600%;
@@ -263,6 +281,7 @@ li {
     height: 1vh;
 }
 .proj-intro {
+    padding-inline-start: 0;
     font-family: $lex;
     text-align: center;
     letter-spacing: .2rem;
@@ -578,7 +597,6 @@ li {
 
     .li-skill {
         padding: .8em 1.8em;
-        box-shadow: -3px 5px 9px 2px #999;
         font-size: 3vw;
     }
     .placeholder-res {
