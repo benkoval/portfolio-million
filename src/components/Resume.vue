@@ -4,50 +4,48 @@
     class='skills-container'>
     <div class='empty'></div>
       <ul class='proj-intro'>Skills</ul>
-      <div class='container-of-container'>
           <div class='list-container'>
             <li 
             data-aos="zoom-in-right"
-            class='li-skill'>Django</li>
+            class='li-skill d'>Django</li>
             <li
             data-aos="zoom-in-right"
-            class='li-skill'>React</li>
+            class='li-skill a'>React</li>
             <li
             data-aos="zoom-in-right"
-            class='li-skill'>HTML</li>
+            class='li-skill b'>HTML</li>
             <li
             data-aos="zoom-in-right"
-            class='li-skill'>SCSS</li>
+            class='li-skill c'>SCSS</li>
             <li
             data-aos="zoom-in-right"
-            class='li-skill'>JavaScript</li>
+            class='li-skill c'>JavaScript</li>
             <li
             data-aos="zoom-in-right"
-            class='li-skill'>Python</li>
+            class='li-skill b'>Python</li>
             <li 
             data-aos="zoom-in-right"
-            class='li-skill'>GitHub</li>
+            class='li-skill a'>GitHub</li>
             <li
             data-aos="zoom-in-right"
-            class='li-skill'>Vue</li>
+            class='li-skill d'>Vue</li>
             <li 
             data-aos="zoom-in-right"
-            class='li-skill'>Postgres</li>
+            class='li-skill d'>Postgres</li>
             <li 
             data-aos="zoom-in-right"
-            class='li-skill'>Heroku</li>
+            class='li-skill a'>Heroku</li>
             <li 
             data-aos="zoom-in-right"
-            class='li-skill'>AWS S3</li>
+            class='li-skill b'>AWS S3</li>
             <li 
             data-aos="zoom-in-right"
-            class='li-skill'>Surge</li>
+            class='li-skill c'>Surge</li>
           </div>
-        </div>
     <h3
     data-aos="fade-right"
     data-aos-offset='-300'
-    class='placeholder-res'>Check out my <a id='resume-link' target='blank' rel='noopener' href='https://drive.google.com/file/d/1tXcFxAAXBADAPovT5fiUc58io0Q50Gls/view'>resume</a></h3>
+    class='placeholder-res'>See more on my <a id='resume-link' target='blank' rel='noopener' href='https://drive.google.com/file/d/1tXcFxAAXBADAPovT5fiUc58io0Q50Gls/view'>resume</a></h3>
 
             <!-- <div class='grid-1'>
                 <button class='see-more wht' role='button'>View resume</button>

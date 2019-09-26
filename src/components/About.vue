@@ -4,7 +4,7 @@
         <h1
         data-aos="fade-right"
         data-aos-duration="1000" 
-        class='title'>Benny K.</h1>
+        class='title'>Ben Koval</h1>
         <img
         data-aos="fade-right"
         data-aos-duration="1000" class='portrait' src='https://bean-project-screenshots.s3.amazonaws.com/mememe.jpg'/>
