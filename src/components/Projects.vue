@@ -76,83 +76,89 @@
             <Decidor
             data-aos='fade-right'
             data-aos-duration='8000'/>
-            <button 
-            @click='backToProjs()'
-            class='see-more fill a' 
-            type='button'
-            data-aos='fade-right'
-            data-aos-duration='8000'
-            data-aos-offset="-300">Back to projects</button>
-            <div class='space'></div>
+            <div class='back-btn-container'>
+                <button 
+                data-aos='fade-right'
+                data-aos-duration='8000'
+                data-aos-offset="-300"
+                @click='backToProjs()'
+                class='see-more fill a' 
+                type='button'>Back to projects</button>
+            </div>
       </div>
 
         <div class='back-container' v-if='!hideIpreview'>
             <Ipreview
             data-aos='fade-right'
             data-aos-duration='8000'/>
-            <button 
-            data-aos='fade-right'
-            data-aos-duration='8000'
-            data-aos-offset="-300"
-            @click='backToProjs()'
-            class='see-more fill b' 
-            type='button'>Back to projects</button>
-            <div class='space'></div>
+            <div class='back-btn-container'>
+                <button 
+                data-aos='fade-right'
+                data-aos-duration='8000'
+                data-aos-offset="-300"
+                @click='backToProjs()'
+                class='see-more fill b' 
+                type='button'>Back to projects</button>
+            </div>
       </div>
         <div class='back-container' v-if='!hideCalculator'>
             <Calculator
             data-aos='fade-right'
             data-aos-duration='8000'/>
-            <button 
-            @click='backToProjs()'
-            class='see-more fill d' 
-            type='button'
-            data-aos='fade-right'
-            data-aos-duration='8000'
-            data-aos-offset="-300">Back to projects</button>
-            <div class='space'></div>
-      </div>
+            <div class='back-btn-container'>
+                <button 
+                data-aos='fade-right'
+                data-aos-duration='8000'
+                data-aos-offset="-300"
+                @click='backToProjs()'
+                class='see-more fill d' 
+                type='button'>Back to projects</button>
+            </div>
+        </div>
 
       <div class='back-container' v-if='!hidePokemon'>
             <Pokemon
             data-aos='fade-right'
             data-aos-duration='8000'/>
-            <button 
-            @click='backToProjs()'
-            class='see-more fill d' 
-            type='button'
-            data-aos='fade-right'
-            data-aos-duration='8000'
-            data-aos-offset="-300">Back to projects</button>
-            <div class='space'></div>
+            <div class='back-btn-container'>
+                <button 
+                data-aos='fade-right'
+                data-aos-duration='8000'
+                data-aos-offset="-300"
+                @click='backToProjs()'
+                class='see-more fill d' 
+                type='button'>Back to projects</button>
+            </div>
       </div>
 
       <div class='back-container' v-if='!hideYoga'>
             <Yoga
             data-aos='fade-right'
             data-aos-duration='8000'/>
-            <button 
-            @click='backToProjs()'
-            class='see-more fill c' 
-            type='button'
-            data-aos='fade-right'
-            data-aos-duration='8000'
-            data-aos-offset="-300">Back to projects</button>
-            <div class='space'></div>
+            <div class='back-btn-container'>
+                <button 
+                data-aos='fade-right'
+                data-aos-duration='8000'
+                data-aos-offset="-300"
+                @click='backToProjs()'
+                class='see-more fill c' 
+                type='button'>Back to projects</button>
+            </div>
       </div>
 
         <div class='back-container' v-if='!hideFreeshelf'>
             <Freeshelf
             data-aos='fade-right'
             data-aos-duration='8000'/>
-            <button 
-            @click='backToProjs()'
-            class='see-more fill e' 
-            type='button'
-            data-aos='fade-right'
-            data-aos-duration='8000'
-            data-aos-offset="-300">Back to projects</button>
-            <div class='space'></div>
+            <div class='back-btn-container'>
+                <button 
+                data-aos='fade-right'
+                data-aos-duration='8000'
+                data-aos-offset="-300"
+                @click='backToProjs()'
+                class='see-more fill e' 
+                type='button'>Back to projects</button>
+            </div>
       </div>
     </section>
 </template>

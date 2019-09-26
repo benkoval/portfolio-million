@@ -1,6 +1,6 @@
 <template>
     <section 
-    id='resume'
+    id='skills'
     class='skills-container'>
     <div class='empty'></div>
       <ul class='proj-intro'>Skills</ul>
@@ -42,10 +42,12 @@
             data-aos="zoom-in-right"
             class='li-skill c'>Surge</li>
           </div>
-    <h3
-    data-aos="fade-right"
-    data-aos-offset='-300'
-    class='placeholder-res'>See more on my <a id='resume-link' target='blank' rel='noopener' href='https://drive.google.com/file/d/1nzBria8QRxXHfioUllVkoKp-bFq2hHue/view'>resume</a></h3>
+    <div class='back-btn-container'>
+      <h3
+      data-aos="fade-right"
+      data-aos-offset='-300'
+      class='placeholder-res'>See more on my <a id='resume-link' target='blank' rel='noopener' href='https://drive.google.com/file/d/1nzBria8QRxXHfioUllVkoKp-bFq2hHue/view'>resume</a></h3>
+    </div>
 
             <!-- <div class='grid-1'>
                 <button class='see-more wht' role='button'>View resume</button>

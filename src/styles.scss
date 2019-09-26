@@ -154,7 +154,7 @@ li {
 }
 
 //about 
-#about {
+#contact {
     height: 100vh;
 }
 
@@ -311,6 +311,12 @@ li {
     justify-content: center;
 }
 
+
+.back-btn-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5vh;
+}
 .grid-item {
     position: relative;
     margin: auto;

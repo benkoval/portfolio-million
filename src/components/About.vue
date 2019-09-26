@@ -1,6 +1,6 @@
 <template>
     <section
-    id='about' class='home'>
+    id='contact' class='home'>
         <h1
         data-aos="fade-right"
         data-aos-duration="1000" 
