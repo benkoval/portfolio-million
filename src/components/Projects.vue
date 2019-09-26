@@ -44,7 +44,7 @@
             class='grid-item d'>
                 <button
                 @click='seeCalculator()'
-                class='see-more wht d' type='button'>Interactive</button>
+                class='see-more wht d' type='button'>Use project</button>
                 <img 
                 alt='Calculator app' 
                 class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/better-calculator.png'/>
@@ -67,7 +67,7 @@
             class='grid-item d'>
                 <button
                 @click='seePokemon()' 
-                class='see-more wht d' type='button'>Interactive</button>
+                class='see-more wht d' type='button'>Play project</button>
                 <img class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/whos-that-pokemon.png'/>
             </div>
         </div>
