@@ -308,7 +308,8 @@ li {
     transition: 0.35s;
     color: var(--color);
     &:hover,
-    &:focus { 
+    &:focus,
+    &:active { 
       color: #fff;
       border-color: var(--color);
       box-shadow:
@@ -359,7 +360,8 @@ li {
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.close:active {
   box-shadow: 
     inset -3.5em 0 0 0 var(--color),
     inset 3.5em 0 0 0 var(--color);  

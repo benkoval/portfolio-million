@@ -11,7 +11,7 @@
                 v-on:keyup.enter='evaluateInput()'
                 class='display-box' 
                 type='text'
-                autofocus></td>
+                disabled></td>
                 </th>
                 <tr class='table-row'>
                     <td><button id='operator' class='calc-button show-input'>(</button></td>
@@ -189,7 +189,7 @@ export default {
   name: 'Calculator',
   mounted() {
    const displayBox = document.querySelector('.display-box')
-   displayBox.focus();
+   this.displayStuff(displayBox);
   },
   methods: {
     displayStuff(display) {
