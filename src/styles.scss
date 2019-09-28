@@ -233,7 +233,7 @@ li {
 }
 
 .skills-container {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 // .container-of-container {
@@ -529,6 +529,11 @@ li {
         padding-left: 8vw;
         height: 10vh;
         width: 10vw;
+        &:hover,
+        &:focus-within {
+            height: 11vh;
+            width: 11vw;
+        }
     }
 
     .intro {
@@ -543,6 +548,7 @@ li {
 
     .projects-container {
         grid-template-columns: repeat(auto-fill, minmax(75vw, 1fr));
+        grid-row-gap: 10vw;
     }
 
     .deck-img {

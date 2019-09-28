@@ -40,7 +40,7 @@
             <div
             data-aos="zoom-in"
             data-aos-duration="1000"
-            data-aos-offset="-300"
+            data-aos-offset="-100"
             class='grid-item d'>
                 <button
                 @click='seeCalculator()'
@@ -52,7 +52,7 @@
             <div
             data-aos="zoom-in"
             data-aos-duration="1000" 
-            data-aos-offset="-350"
+            data-aos-offset="-100"
             class='grid-item c'>
                 <button
                 @click='seeYoga()'
@@ -63,7 +63,7 @@
             <div
             data-aos="zoom-in"
             data-aos-duration="1000"
-            data-aos-offset="-400"
+            data-aos-offset="-100"
             class='grid-item d'>
                 <button
                 @click='seePokemon()' 
