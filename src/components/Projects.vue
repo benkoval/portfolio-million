@@ -10,32 +10,32 @@
         data-aos-duration="1000"
         v-if='!hideProjects'
         class='projects-container'>
-            <div class='grid-item a'>
+            <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            class='grid-item e'>
+                <button
+                @click='seeAHB()' 
+                class='see-more wht e' type='button'>View project</button>
+                <img 
+                alt='Homepage of Durham affordable housing app' class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/ahb/Screenshot+2019-10-31+01.36.31.png'>
+            </div>
+            <div class='grid-item b'>
                 <button 
                 @click='seeDecidor()'
-                class='see-more wht a' type='button'>View project</button>
+                class='see-more wht b' type='button'>View project</button>
                 <img class='deck-img' 
                 alt='Homepage of decidOR app which displays a grid of activity choices, including watching movies or eating out' src='https://bean-project-screenshots.s3.amazonaws.com/decidor.png'/>
             </div>
             <div
             data-aos="zoom-in"
             data-aos-duration="1000"
-            class='grid-item b'>
+            class='grid-item a'>
                 <button
                 @click='seeIpreview()' 
-                class='see-more wht b' type='button'>View project</button>
+                class='see-more wht a' type='button'>View project</button>
                 <img class='deck-img' 
                 alt='iPreview search results' src='https://bean-project-screenshots.s3.amazonaws.com/ipreview.png'/>
-            </div>
-            <div
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            class='grid-item e'>
-                <button
-                @click='seeFreeshelf()' 
-                class='see-more wht e' type='button'>View project</button>
-                <img 
-                alt='Homepage of Freeshelf app' class='deck-img' src='https://bean-project-screenshots.s3.amazonaws.com/freeshelf.png'/>
             </div>
             <div
             data-aos="zoom-in"
@@ -82,7 +82,7 @@
                 data-aos-duration='8000'
                 data-aos-offset="-300"
                 @click='backToProjs()'
-                class='see-more fill a' 
+                class='see-more fill b' 
                 type='button'>Back to projects</button>
             </div>
       </div>
@@ -97,7 +97,7 @@
                 data-aos-duration='8000'
                 data-aos-offset="-300"
                 @click='backToProjs()'
-                class='see-more fill b' 
+                class='see-more fill e' 
                 type='button'>Back to projects</button>
             </div>
       </div>
@@ -146,8 +146,8 @@
             </div>
       </div>
 
-        <div class='back-container' v-if='!hideFreeshelf'>
-            <Freeshelf
+        <div class='back-container' v-if='!hideAHB'>
+            <AHB
             data-aos='fade-right'
             data-aos-duration='8000'/>
             <div class='back-btn-container'>
@@ -170,7 +170,7 @@ import Ipreview from "./Ipreview";
 import Calculator from "./Calculator";
 import Pokemon from "./Pokemon";
 import Yoga from "./Yoga";
-import Freeshelf from "./Freeshelf";
+import AHB from "./AHB";
 
 export default {
   name: 'Projects',
@@ -180,7 +180,7 @@ export default {
     Calculator,
     Pokemon,
     Yoga,
-    Freeshelf
+    AHB
   },
   data: () => {
     return {
@@ -190,7 +190,7 @@ export default {
         hideCalculator: true,
         hidePokemon: true,
         hideYoga: true,
-        hideFreeshelf: true,
+        hideAHB: true,
     }
   },
   mounted() {
@@ -206,7 +206,7 @@ export default {
           this.hideCalculator = true;
           this.hidePokemon = true;
           this.hideYoga = true;
-          this.hideFreeshelf = true;
+          this.hideAHB = true;
       },
       seeDecidor() {
           this.hideProjects = true;
@@ -228,9 +228,9 @@ export default {
           this.hideProjects = true;
           this.hideYoga = false;
       },
-      seeFreeshelf() {
+      seeAHB() {
           this.hideProjects = true;
-          this.hideFreeshelf = false;
+          this.hideAHB = false;
       }
   }
 }

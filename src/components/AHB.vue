@@ -1,40 +1,43 @@
 <template>
     <section class='indiv-proj-container'>
-      <h2 class='proj-title b'>decidOR</h2>
+      <h2 class='proj-title e'>Durham Affordable Housing</h2>
         <agile :autoplay='true'>
             <div class='slide'>
-                <img class='proj-img' src='https://bean-project-screenshots.s3.amazonaws.com/decidor.png'>
+                <img class='proj-img' src='https://bean-project-screenshots.s3.amazonaws.com/ahb/Screenshot+2019-10-31+01.33.49.png'>
             </div>
 
             <div class='slide'>
-                <img class='proj-img' src='https://bean-project-screenshots.s3.amazonaws.com/decidor2.png'>
+                <img class='proj-img' src='https://bean-project-screenshots.s3.amazonaws.com/ahb/Screenshot+2019-10-31+01.36.31.png'>
             </div>
 
             <div class='slide'>
-                <img class='proj-img' src='https://bean-project-screenshots.s3.amazonaws.com/decidor3.png'>
+                <img class='proj-img' src='https://bean-project-screenshots.s3.amazonaws.com/ahb/Screenshot+2019-10-31+01.37.28.png'>
             </div>
 
-            <div class='slide'>
-                <img class='proj-img' src='https://bean-project-screenshots.s3.amazonaws.com/decidor4.png'>
-            </div>
         </agile>
-        <div class='link-container'>
-          <a class='links' target='blank' rel='noopener' href='https://github.com/decider-team/decidr'>Source code</a>
-          <a class='links' target='blank' rel='noopener' href='https://decidor.herokuapp.com/'>Live site</a>
+        <div id='pls-container'>
+          <!-- <a class='links' target='blank' rel='noopener' href='https://github.com/ZekeHart/afffordableHousingBond'>Source code</a> -->
+          <a class='links' id='pls' target='blank' rel='noopener' href='https://durhamaffordablehousing.surge.sh/'>Live site</a>
         </div>
 
         <div class='more-info'>
-          <h3 class='proj-info'>Over the course of two weeks, I collaborated with three of my fellow developers at Momentum Learning to build decidOR, a web application which helps users handle the overwhelming experience of having too many decisions to make.
-          We utilised various technologies, including <span class='tech b'>Django/Python, Vue/JavaScript, SCSS, Axios, AWS S3, </span> and more.</h3>
+          <h3 class='proj-info'>WIP: The result of working with the Mayor of Durham, city officials, and the local Code for America brigade to provide context for the affordable housing bond through data visualizations.</h3>
         </div>
     </section>
 </template>
 
 <style lang='scss'>
 
-.more-info {
+#pls-container {
+  
   display: flex;
   justify-content: center;
+  align-content: center;
+}
+#pls {
+  padding-top: 50px;
+  margin: auto;
+  text-align: center;
 }
 .agile {
     margin: auto;
@@ -100,7 +103,7 @@
 }
 
 .proj-img {
-    width: 50vw;
+    width: 40vw;
 }
 
 </style>
