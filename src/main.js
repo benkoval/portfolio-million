@@ -3,6 +3,7 @@ import App from './App.vue'
 import './styles.scss'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import router from './router'
 
 Vue.config.productionTip = false
 
@@ -10,5 +11,7 @@ new Vue({
   created () {
     AOS.init()
   },
-  render: h => h(App),
+
+  router,
+  render: h => h(App)
 }).$mount('#app')
